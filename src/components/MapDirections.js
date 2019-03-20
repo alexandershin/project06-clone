@@ -40,7 +40,7 @@ class MapDirections extends Component {
       url: 'http://www.mapquestapi.com/directions/v2/route',
       outFormat: 'json',
       params: {
-        key: 'jAuMBn6SemqglGEvttlGDZiDyMwOn7SL',
+        key: 'QPt5z6dj4n9Inx25DABUDSnmIX6SX4zA',
         outFormat: 'json',
         unit: 'k',
         from: this.state.userInput,
@@ -64,7 +64,7 @@ class MapDirections extends Component {
       url: 'https://www.mapquestapi.com/directions/v2/route',
       outFormat: 'json',
       params: {
-        key: 'jAuMBn6SemqglGEvttlGDZiDyMwOn7SL',
+        key: 'QPt5z6dj4n9Inx25DABUDSnmIX6SX4zA',
         outFormat: 'json',
         unit: 'k',
         from: this.state.userInput,
@@ -129,7 +129,7 @@ class MapDirections extends Component {
         data-simplebar-auto-hide='false'
       >
         <div>
-          <h2>How do I get here?</h2>
+          <h2 className='mapHeader'>How do I get here?</h2>
 
           <div className='mapParent'>
             <form action='submit' onSubmit={this.handleSubmit}>
@@ -156,8 +156,10 @@ class MapDirections extends Component {
                   this.state.userAddress
                 }&end=${
                   this.state.bunkerAddress
-                }&key=jAuMBn6SemqglGEvttlGDZiDyMwOn7SL`}
-                alt=''
+                }&key=QPt5z6dj4n9Inx25DABUDSnmIX6SX4zA`}
+                alt={`directions from ${this.state.userAddress} to ${
+                  this.state.bunkerAddress
+                }`}
               />
               <p>From: {this.state.userAddress}</p>
               <p>To: {this.state.bunkerAddress}</p>
@@ -175,7 +177,7 @@ class MapDirections extends Component {
               })}
 
               <div>
-                <h2>Directions</h2>
+                <h2 className='mapHeader'>Directions</h2>
                 {this.state.userDirections.map((path, i) => {
                   const distance = path.distance.toFixed(1);
                   return (
