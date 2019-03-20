@@ -1,0 +1,156 @@
+
+@media (max-width: 950px) {
+  main .mapLeft,
+  main .mapRight {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .mapLeft p{
+     width: 87%;
+  }
+  main .mapLeft {
+    margin-right: 0;
+    margin-left: 6%;
+  }
+
+  .mapLeft img {
+    width: 88%;
+  }
+}
+
+@media(max-width: 900px){
+  /* bunkernames */
+  .bunkerNames label{
+    width:48%;
+    float: left;
+    margin: 2% 0;
+  }
+  .bunkerNames label:nth-child(2){
+    margin-right:4%;
+  }
+
+  .bunkerNames label:nth-child(6){
+    margin-right:4%;
+  }
+  main {
+    min-height: 80vh;
+  }
+}
+
+
+@media(max-width: 850px){
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  /* header */
+  header,
+  header p,
+  .mapLeft p,
+  .mapRight p {
+    font-size: 0.75rem;
+  }
+
+  main header button,
+  main header .content p {
+    padding: 10px 0;
+  }
+
+  /* form sections */
+  .forms {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .forms li {
+    font-size: 0.8rem;
+  }
+
+  .forms p {
+    font-size: 0.8rem;
+  }
+
+  .lists li label::before{
+    top: 0px;
+  }
+
+  .lists li label::after {
+    top: 2.5px;
+  }
+}
+
+
+@media(max-width: 565px){
+  h1{
+    font-size: 7rem;
+    line-height: 4.5rem;;
+  }
+  h1 span{
+    font-size: 2.5rem;
+    display: block;
+    padding-top: 25%;
+  }
+  .intro h1 span{
+    padding-top: 10%;
+  }
+  .loginIntro h2{
+    display: none;
+  }
+  .loginIntro h2, .loginIntro p{
+    font-size: .8rem;
+    padding: 5% ;
+    margin: 70px 0 0 0;
+  }
+
+@media (max-width: 400px) {
+  /* h1 for login and main pages */
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+}
+
+  button.loginButton{
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  button.loginButton.loginOne{
+    margin: 0px 0 25px 0;
+  }
+  main {
+    min-height: 85vh;
+  }
+}
+
+
+@media(max-width: 550px){
+  /* bunkernames */
+  .bunkerNames label{
+    display: block;
+    width: 100%;
+    min-width: 100px;
+    margin: 1% 0; 
+  }
+
+  .bunkerNames label:nth-child(2){
+    margin: 40px 0 1% 0;
+  }
+
+  .bunkerNames label:nth-child(6){
+    margin-right: 0;
+  }
+
+  .bunkerNames label:nth-child(8){
+    margin-bottom: 40px;
+  }
+}
+

@@ -1,0 +1,36 @@
+header {
+    background: black;
+    color: white;
+    width: 100%;
+    margin: 0px;
+}
+
+header .right {
+    color: white;
+    font-size: 0.9rem;
+}
+
+header button {
+    background: none;
+    border: none;
+    color: #FF450B;
+    padding: 20px 0;
+}
+
+header button:hover,
+header button:focus {
+    font-weight: 700;
+    text-shadow: 0 0 11px #FF450B;
+
+}
+
+header .content {
+    text-align: right;
+}
+
+header .content p {
+    float: left;
+    margin: 0;
+    font-weight: bold;
+    padding: 20px 0;
+}
